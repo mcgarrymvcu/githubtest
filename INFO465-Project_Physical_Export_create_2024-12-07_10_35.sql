@@ -91,9 +91,5 @@ ALTER TABLE Enrollment ADD CONSTRAINT Enrollment_Course_session FOREIGN KEY Enro
 ALTER TABLE Prerequisites ADD CONSTRAINT Prerequisites_Course FOREIGN KEY Prerequisites_Course (Course_Course_id)
     REFERENCES Course (Course_id);
 
--- Reference: Student_Enrollment (table: Enrollment)
-ALTER TABLE Enrollment ADD CONSTRAINT Student_Enrollment FOREIGN KEY Student_Enrollment (Student_Student_id)
+ALTER TABLE Enrollment ADD CONSTRAINT Student_Enrollment FOREIGN KEY (Student_Student_id)
     REFERENCES Student (Student_id);
-
--- End of file.
-
