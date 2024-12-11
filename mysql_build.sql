@@ -1,8 +1,6 @@
--- Created by Vertabelo (http://vertabelo.com)
--- Last modification date: 2024-12-07 15:22:09.753
+CREATE DATABASE IF NOT EXISTS CourseDB;
+USE CourseDB;
 
--- tables
--- Table: Course
 CREATE TABLE Course (
     Course_id char(8)  NOT NULL,
     Department_id char(4)  NOT NULL,
