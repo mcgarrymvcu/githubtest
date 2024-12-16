@@ -1,0 +1,16 @@
+stages: 
+  - security-scan
+
+security_scan:
+  stage: security-scan
+  image: node:latest
+  script:
+    - npm install eslint  # Corrected 'slint' to 'eslint'
+    - npx eslint --init
+    - npx eslint *.js --format json --output-file eslint_report.json  # Generate JSON report
+  artifacts:
+    when: always
+    paths:
+      - eslint_report.json  # Collect the eslint report as an artifact
+  allow_failure: true
+
