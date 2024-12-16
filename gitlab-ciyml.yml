@@ -1,0 +1,17 @@
+stages:
+  - security-scan
+
+security_scan:
+  stage: security-scan
+  image: node:latest
+  script:
+    - ls -la  # List directory contents to check for .js files
+    - npm install jshint  # Install JSHint
+    - npx jshint *.js > jshint_report.txt || true  # Run JSHint and ignore errors
+  artifacts:
+    when: always
+    paths:
+      - jshint_report.txt  # Collect the JSHint report as an artifact
+  allow_failure: true
+
+
