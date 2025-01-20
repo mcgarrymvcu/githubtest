@@ -1,7 +1,5 @@
 var readLineSync = require("readline-sync");
 
-console.log("What the fuck?");
-
 //function getRawInput() {
 //    var needInput = true;
 //    while (needInput) {
