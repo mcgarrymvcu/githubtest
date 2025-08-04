@@ -14,10 +14,10 @@ from email.mime.text import MIMEText
 from datetime import datetime, timedelta
 
 # === 🔐 CONFIGURATION ===
-NEWS_API_KEY = "a7a2d5703db644fbaf8e5eaa6035cdaf"
-OPENAI_API_KEY = "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"
+NEWS_API_KEY = ""
+OPENAI_API_KEY = ""
 GMAIL_ADDRESS = "mcgarry72@gmail.com"
-GMAIL_APP_PASSWORD = "tjlvxnfxehglnnol "  # from https://myaccount.google.com/apppasswords
+GMAIL_APP_PASSWORD = ""  # from https://myaccount.google.com/apppasswords
 TO_EMAIL = "mcgarrym@vcu.edu"  # Can be the same or different
 
 # === 📅 GET YESTERDAY'S DATE ===
